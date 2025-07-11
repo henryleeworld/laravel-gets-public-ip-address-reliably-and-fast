@@ -7,6 +7,9 @@ use KnotsPHP\PublicIP\Finders\PublicIPv4;
 
 class PublicIpAddressController extends Controller
 {
+    /**
+     * Display the specified resource.
+     */
     public function show() 
     {
         echo __('My IPv4 address is: ') . ($ipv4 = PublicIPv4::get()); // returns your IPv4
